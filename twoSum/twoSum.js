@@ -17,7 +17,7 @@ var twoSum =  function(nums, target) {
     for (let i = 0; i <nums.length; i++){
         let num1 = nums[i];
         let num2 = target - num1;
-        if (map.has(num2)){
+        if (map.has(num2)) {
             return [i, map.get(num2)];
         }
         map.set(num1, i)
@@ -25,3 +25,21 @@ var twoSum =  function(nums, target) {
 };
 
 console.log(twoSum(nums = [3,2,4], target = 6))
+
+//what I did on LeetCode
+/**
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number[]}
+ */
+var twoSum = function(nums, target) {
+    let hashMap = new Map();
+    for (let i = 0; i <nums.length; i++){
+        let num1 = nums[i];
+        let num2 = target - num1;
+        if (hashMap.has(num2)){
+            return [i, hashMap.get(num2)];
+        }
+        hashMap.set(num1, i)
+    }
+};
