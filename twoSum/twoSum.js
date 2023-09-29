@@ -40,6 +40,7 @@ var twoSum = function(nums, target) {
         if (hashMap.has(num2)){
             return [i, hashMap.get(num2)];
         }
+        // if we havent seen it then we can just set it equal the current number that we are at and the index of that num
         hashMap.set(num1, i)
     }
 };
