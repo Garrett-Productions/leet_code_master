@@ -44,3 +44,7 @@ var twoSum = function(nums, target) {
         hashMap.set(num1, i)
     }
 };
+
+//let hashMap = new Map()
+//takes in 2 params
+// map.has, map.get, map.set
