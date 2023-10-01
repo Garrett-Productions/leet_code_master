@@ -27,7 +27,8 @@ var romeToInt = function(string) {
     }
     let result = 0;
     string.split('').forEach((num,i) => {
-        if(romanMap[num] < romanMap[string[i+1]]) result -= romanMap[num];
+        if(romanMap[num] < romanMap[string[i+1]]) 
+            result -= romanMap[num];
         else result += romanMap[num];
     });
     return result
@@ -49,3 +50,31 @@ console.log(romeToInt("LVIII"))
 // Input: s = "III"
 // Output: 3
 // Explanation: III = 3.
+
+
+
+// leet code version 
+/**
+ * @param {string} s
+ * @return {number}
+ */
+var romanToInt = function(s) {
+    romanMap = {
+        I:1,
+        V:5,
+        X:10,
+        L:50,
+        C:100,
+        D:500,
+        M:1000
+    }
+    let result = 0;
+    s.split('').forEach((num,i) => {
+        if (romanMap[num] < romanMap[s[i+1]])
+            result -= romanMap[num];
+        else result += romanMap[num]
+    });
+    return result
+};
+
+console.log(romanToInt('III'))
