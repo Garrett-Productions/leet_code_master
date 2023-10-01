@@ -16,7 +16,7 @@
 // There are six instances where subtraction is used:
 
 var romeToInt = function(string) {
-    const romanMap = {
+    const romanMap = { // we are comparing the romanmap values against our string, if the left value is less than the right value then subtract, else add
         I:1,
         V:5,
         X:10,
