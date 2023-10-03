@@ -37,6 +37,7 @@ var two = function(nums, target) {
         hMap.set(firstNum,i)
     }
 };
+console.log(two(nums=[4,2,3], target = 6))
 
 //what I did on LeetCode
 /**
