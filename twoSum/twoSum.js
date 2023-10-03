@@ -24,8 +24,19 @@ var twoSum =  function(nums, target) {
         map.set(num1, i)
     }
 };
-
 console.log(twoSum(nums = [3,2,4], target = 6))
+
+var two = function(nums, target) {
+    let hMap = new Map();
+    for (let i = 0; i <nums.length; i++){
+        let firstNum = nums[i];
+        let secondNum = target - firstNum;
+        if (hMap.has(secondNum)){
+            return [i, hMap.get(secondNum)];
+        }
+        hMap.set(firstNum,i)
+    }
+};
 
 //what I did on LeetCode
 /**
