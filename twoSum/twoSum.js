@@ -12,6 +12,9 @@
 // Input: nums = [3,2,4], target = 6
 // Output: [1,2]
 
+
+// Day 1
+
 var twoSum =  function(nums, target) {
     let map = new Map();
     // we use a hashmap to store what we've seen so far and later recall if we've seen that number
@@ -26,6 +29,9 @@ var twoSum =  function(nums, target) {
 };
 console.log(twoSum(nums = [3,2,4], target = 6))
 
+
+
+// Day 2 
 var two = function(nums, target) {
     let hMap = new Map();
     for (let i = 0; i <nums.length; i++){
@@ -38,6 +44,15 @@ var two = function(nums, target) {
     }
 };
 console.log(two(nums=[4,2,3], target = 6))
+
+
+
+
+
+
+
+
+
 
 //what I did on LeetCode
 /**
