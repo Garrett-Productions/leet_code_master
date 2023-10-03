@@ -29,6 +29,7 @@ var romeToInt = function(string) {
     }
     let result = 0;
     string.split('').forEach((num,i) => {
+        // if the first num is less than the 2nd num then subtract it
         if(romanMap[num] < romanMap[string[i+1]]) 
             result -= romanMap[num];
         else result += romanMap[num];
