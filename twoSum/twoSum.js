@@ -14,6 +14,7 @@
 
 var twoSum =  function(nums, target) {
     let map = new Map();
+    // we use a hashmap to store what we've seen so far and later recall if we've seen that number
     for (let i = 0; i <nums.length; i++){
         let num1 = nums[i];
         let num2 = target - num1;
