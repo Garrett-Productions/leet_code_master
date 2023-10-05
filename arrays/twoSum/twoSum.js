@@ -45,6 +45,19 @@ var two = function(nums, target) {
 };
 console.log(two(nums=[4,2,3], target = 6))
 
+var two_sum = function(nums, target) {
+    let map = new Map();
+    for (let i = 0; i <nums.length; i++){
+        let num_one = nums[i]; // num 1 = 4 on first iteration
+        let num_two = target - num_one; // num 2 = 6 -4 = 2 // we find the num we need straight away and keep looping until we find that num in our array
+        if (map.has(num_two)){ // if our map has seen the number 2.. if it has the num we are looking for
+            return [i, map.get(num_two)]; // then return the position its at, i, and the number itself
+        }
+        map.set(num_one,i) // else if it doesnt, set our map = to the num one variable at the position so it can look again
+    }
+};
+console.log(two(nums=[4,6,10,47,50,90], target = 60))
+
 
 
 
