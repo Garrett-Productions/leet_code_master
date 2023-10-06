@@ -4,7 +4,7 @@
 
  
 
-Example 1:
+// Example 1:
 
 // Input: strs = ["flower","flow","flight"]
 // Output: "fl"
