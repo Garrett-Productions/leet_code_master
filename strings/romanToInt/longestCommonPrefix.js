@@ -4,7 +4,7 @@
 
 
 var longestCommonPrefix = function(strings){
-    let prefix = strings[0] 
+    let prefix = strings[0] // this var equals the first word in the array sow e can make comparisons
 }
 
 // Example 1:
