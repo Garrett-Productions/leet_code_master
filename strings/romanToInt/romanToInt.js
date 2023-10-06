@@ -101,4 +101,4 @@ var romanNumToInt = function(string){
     });
     return result
 }
-console.log(romanToInt('III'))
+console.log(romanNumToInt('III'))
