@@ -16,7 +16,20 @@ var removeElement = function(nums, val) {
     }
     return uniqueVals
 };
-console.log(removeElement(nums = [0,1,2,2,3,0,4,2], val = 2))
-console.log(removeElement(nums = [7,8,7,9,9,9,], val = 9))
-console.log(removeElement(nums = [7,8,7,9,9,9,], val = 9))
+// console.log(removeElement(nums = [0,1,2,2,3,0,4,2], val = 2))
+// console.log(removeElement(nums = [7,8,7,9,9,9,], val = 9))
+// console.log(removeElement(nums = [7,8,7,9,9,9,], val = 9))
 
+
+var removeCertainVal = function(arr,value){
+    let firstCounter = 0 
+    for (let secondCounter = firstCounter; secondCounter < arr.length; secondCounter++){
+        if(nums[secondCounter] != value){ //if they're different
+            nums[firstCounter] = nums[secondCounter] // set the position of firstCounter in the array, equal to the value of the nums[secondCounter]
+            firstCounter++ //then increase our let variables
+        }
+    }
+    return firstCounter
+}
+console.log(removeCertainVal(nums = [7,8,7,9,9,9,], val = 9))
+console.log(removeCertainVal(nums = [0,1,2,2,3,0,4,2], val = 2))
