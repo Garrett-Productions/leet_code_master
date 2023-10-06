@@ -3,8 +3,16 @@
 // You must write an algorithm with O(log n) runtime complexity.
 
 // binary search, with two pointers, making comparisons
+//The Math.floor() method rounds a number DOWN to the nearest integer.
 
+var searchInsert = function(nums, target){
+    let left = 0;
+    let right = nums.length - 1;
 
+    while(left <= right){
+        let mid = left + Math.floor
+    }
+}
 // Example 1:
 
 // Input: nums = [1,3,5,6], target = 5
