@@ -102,5 +102,5 @@ var romanNumToInt = function(string){
     return result
 }
 console.log(romeToInt("MCMXCIV"))
-console.log(romeToInt("III"))
 console.log(romeToInt("LVIII"))
+console.log(romeToInt("III"))
