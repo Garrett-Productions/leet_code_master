@@ -25,3 +25,4 @@ var longestCommonPrefix = function(strings){
 
 
 // set the first work equal to a var to make comparisons 
+// loop starting from second word
