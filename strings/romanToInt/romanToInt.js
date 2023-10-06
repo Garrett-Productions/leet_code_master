@@ -101,4 +101,6 @@ var romanNumToInt = function(string){
     });
     return result
 }
-console.log(romanNumToInt('III'))
+console.log(romeToInt("MCMXCIV"))
+console.log(romeToInt("III"))
+console.log(romeToInt("LVIII"))
