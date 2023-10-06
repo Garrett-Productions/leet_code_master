@@ -14,7 +14,7 @@ var removeDuplicates = function(nums){
     let uniqueNums = 1 // we know the first number will be unqiue because of no comparisons
     for(let i = 0; i < nums.length - 1; i++){
         if(nums[i] !== nums[i+1]){ // if theese numbers arent the same..
-            nums[uniqueNums] = nums[i+1] // then set my var equal  the next position in the array
+            nums[uniqueNums] = nums[i+1] // // this handles removing indices in place, by replacing the value in the position of i with the value in the position of i + 1, so it moves value down an indice in the array, keeping it in place
             uniqueNums++
         }
     }
