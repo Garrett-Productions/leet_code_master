@@ -2,7 +2,10 @@
 
 // If there is no common prefix, return an empty string "".
 
- 
+
+var longestCommonPrefix = function(strings){
+    let prefix = strings[0] 
+}
 
 // Example 1:
 
