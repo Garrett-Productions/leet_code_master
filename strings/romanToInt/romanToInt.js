@@ -83,3 +83,21 @@ var romanToInt = function(s) {
 console.log(romanToInt('III'))
 
 //Roman to Int warmup
+var romanNumToInt = function(string){
+    romanMap = {
+        I:1,
+        V:5,
+        X:10,
+        L:50,
+        C:100,
+        D:500,
+        M:1000
+    }
+    let result = 0
+    string.split('').forEach((number,i) => {
+        if (romanMap[number] < romanMap[string[i+1]])
+            result -= romanMap[number];
+        else result += romanMap[number]
+    });
+    return result
+}
