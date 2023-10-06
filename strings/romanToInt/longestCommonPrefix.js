@@ -12,7 +12,7 @@ var longestCommonPrefix = function(strings){
     }
     return prefix
 }
-
+// we could double for loop brute force this but thats whack
 // Example 1:
 
 // Input: strs = ["flower","flow","flight"]
