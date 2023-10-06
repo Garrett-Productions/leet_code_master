@@ -22,3 +22,6 @@ var longestCommonPrefix = function(strings){
 // Input: strs = ["dog","racecar","car"]
 // Output: ""
 // Explanation: There is no common prefix among the input strings.
+
+
+// set the first work equal to a var to make comparisons 
