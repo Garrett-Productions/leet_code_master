@@ -29,4 +29,5 @@ var longestCommonPrefix = function(strings){
 // indexOf returns -1 if the word is not in the next word when making a comparison, else returns 0
 // basically loop over flower until we get flow
 // now we do something to the word to shorten it, and then keep goin
-// built in method substring is used
+// built in method substring is used to cut
+// The substring() method extracts characters from start to end (exclusive).
