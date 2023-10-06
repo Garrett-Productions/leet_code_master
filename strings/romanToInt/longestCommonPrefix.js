@@ -12,6 +12,18 @@ var longestCommonPrefix = function(strings){
     }
     return prefix
 }
+
+var longCommPref = function(strs){
+    let prefix = strs[0];
+    for(let i = 1; i< strs.length; i++){
+        while(strs[i].indexOf(prefix) !== 0){// if they dont match itll return -1
+        prefix = prefix.substring(0, prefix.length - 1)
+        }
+    }
+    return prefix
+}
+
+console.log(longCommPref(strs = ["flower","flow","flight"]))
 // we could double for loop brute force this but thats whack
 // Example 1:
 
