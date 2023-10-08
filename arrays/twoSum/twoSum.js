@@ -59,7 +59,18 @@ var two_sum = function(nums, target) {
 console.log(two(nums=[4,6,10,47,50,90], target = 60))
 
 
-
+var two = function(array, target){
+    let map = new Map();
+    for(let i = 0; i < array.length; i++){
+        let num1 = array[i];
+        let num2 = target - num1;
+        if(map.has(num2)){
+            return [i, map.get(num2)]
+        }
+        map.set(num1,i)
+    }
+}
+console.log(two(nums=[4,6,10,54,77], target = 60))
 
 
 
