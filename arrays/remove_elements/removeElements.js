@@ -26,7 +26,14 @@ var removeElement = function(nums, val) {
 // The order of the elements may be changed. 
 // Then return the number of elements in nums which are not equal to val.
 
-
+var removeVal = function(array,val){
+    uniqueVals = 0;
+    for(let i = 0; i<array.length; i++){
+        if(array[i] !== val){
+            array[uniqueVals]= array[i];// we replace it if they arent the same
+        }
+    }
+}
 
 var removeCertainVal = function(arr,value){
     let firstCounter = 0 
