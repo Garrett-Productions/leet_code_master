@@ -21,6 +21,13 @@ var removeElement = function(nums, val) {
 // console.log(removeElement(nums = [7,8,7,9,9,9,], val = 9))
 
 
+// Given an integer array nums and an integer val, 
+// remove all occurrences of val in nums in-place. 
+// The order of the elements may be changed. 
+// Then return the number of elements in nums which are not equal to val.
+
+
+
 var removeCertainVal = function(arr,value){
     let firstCounter = 0 
     for (let secondCounter = firstCounter; secondCounter < arr.length; secondCounter++){
