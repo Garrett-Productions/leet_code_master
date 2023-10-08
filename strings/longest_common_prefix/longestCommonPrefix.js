@@ -22,7 +22,6 @@ var longCommPref = function(strs){
     }
     return prefix
 }
-
 console.log(longCommPref(strs = ["flower","flow","flight"]))
 // we could double for loop brute force this but thats whack
 // Example 1:
