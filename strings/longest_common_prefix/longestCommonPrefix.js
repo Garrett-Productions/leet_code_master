@@ -36,7 +36,7 @@ console.log(longCommPref(strs = ["flower","flow","flight"]))
 // Explanation: There is no common prefix among the input strings.
 
 
-// set the first work equal to a var to make comparisons 
+// set the first word equal to a var to make comparisons 
 // loop starting from second word
 // indexOf returns -1 if the word is not in the next word when making a comparison, else returns 0
 // basically loop over flower until we get flow
