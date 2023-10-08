@@ -37,6 +37,8 @@ var removeVal = function(array,val){
     return uniqueVals
 };
 
+console.log(removeVal(nums = [7,8,7,9,9,9,], val = 9))
+
 var removeCertainVal = function(arr,value){
     let firstCounter = 0 
     for (let secondCounter = firstCounter; secondCounter < arr.length; secondCounter++){
