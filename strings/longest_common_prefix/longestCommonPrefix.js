@@ -23,6 +23,18 @@ var longCommPref = function(strs){
     return prefix
 }
 console.log(longCommPref(strs = ["flower","flow","flight"]))
+
+// indexOf takes in a parameter to search through
+var commonPrefix = function(strs){
+    let prefix = strs[0];
+    for(let i = 1; i<strs.length; i++){
+        while(strs[i].indexOf(prefix) !== 0) {// because it returns -1 if it doesnt match
+        prefix = prefix.substring(0,prefix.length - 1)
+        }
+    }
+    return prefix
+}
+console.log(commonPrefix(strs = ["flower","flow","flight"]))
 // we could double for loop brute force this but thats whack
 // Example 1:
 
