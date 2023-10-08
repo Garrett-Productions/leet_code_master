@@ -31,9 +31,11 @@ var removeVal = function(array,val){
     for(let i = 0; i<array.length; i++){
         if(array[i] !== val){
             array[uniqueVals]= array[i];// we replace it if they arent the same
+            uniqueVals++
         }
     }
-}
+    return uniqueVals
+};
 
 var removeCertainVal = function(arr,value){
     let firstCounter = 0 
