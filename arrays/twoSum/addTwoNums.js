@@ -31,7 +31,8 @@ console.log(twoSum(array = [3,2,4], target = 6))
 // we create a loop to loop through our given array
 // we create one variable to store our iteration value of the array..
 // we create another var to capture what we are looking for, being the target we are given minus the the first variable
-// if our mao has the value of num2, then return an array of the current index of i, and num2, through the map.get method
+// if our map has the value of num2, then return an array of the current index of i, and num2, through the map.get method
+// lastly, set our map equal to an array, of values [num1, i]
 
 
 // Given an array of integers, array, and an integer target, 
@@ -62,7 +63,7 @@ var twoSome = function(array, value){
         map.set(num1, i)
     }
 }
-console.log(twoSome(array = [3,2,4], target = 6))
+console.log(twoSome(array = [3,2,4], target = 6)) //as
 
 // new Map() – creates the map.
 // map.set(key, value) – stores the value by the key.
