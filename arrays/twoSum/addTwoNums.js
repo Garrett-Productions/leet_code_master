@@ -14,16 +14,15 @@
 
 var twoSum = function(array, target){
     //lets use map fucntion to store our seen ints and then make comparison checks to our map
-    let map = Map()
+    let map = Map();
     for (let i = 0; i <= array.length; i++){
-        num1 = array[i] //first iteration let num1 equal the first value in our array
-        num2 = target - num1 //  now lets find our missing num by doing some easy logic
+        num1 = array[i]; //first iteration let num1 equal the first value in our array
+        num2 = target - num1; //  now lets find our missing num by doing some easy logic
         //lets use built in map functions to see what has been stored. such as .has, .get, and .set
-        if(map.has(num2)){
+        if(map.has(num2)) {
             return [i, num2];
         }
-        // else
         map.set(num1, i ) //set map to 1st iteration
     }
 };
-console.log(twoSum)
+console.log(twoSum(nums = [3,2,4], target = 6))
