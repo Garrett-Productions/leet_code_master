@@ -26,3 +26,9 @@ var twoSum = function(array, target){
     }
 };
 console.log(twoSum(array = [3,2,4], target = 6))
+
+// we are creating a map to store what we've seen and later recall it, we know what map is.
+// we create a loop to loop through our given array
+// we create one variable to store our iteration value of the array..
+// we create another var to capture what we are looking for, being the target we are given minus the the first variable
+// if our mao has the value of num2, then return an array of the current index of i, and num2, through the map.get method
