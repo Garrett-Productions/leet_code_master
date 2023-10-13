@@ -53,4 +53,21 @@ console.log(twoSum(array = [3,2,4], target = 6))
 
 var twoSome = function(array, value){
     let map = new Map()
+    for(let i = 0; i<= array.length; i++){
+        num1 = array[i];
+        num2 = target - num1;
+        if(map.has(num2)){
+            return [i, map.get(num2)]
+        }
+        map.set(num1, i)
+    }
 }
+console.log(twoSome(array = [3,2,4], target = 6))
+
+// new Map() – creates the map.
+// map.set(key, value) – stores the value by the key.
+// map.get(key) – returns the value by the key, undefined if key doesn’t exist in map.
+// map.has(key) – returns true if the key exists, false otherwise.
+// map.delete(key) – removes the element (the key/value pair) by the key.
+// map.clear() – removes everything from the map.
+// map.size – returns the current element count.
