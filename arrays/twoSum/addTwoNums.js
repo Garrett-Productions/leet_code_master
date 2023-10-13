@@ -12,6 +12,6 @@
 // Input: nums = [3,2,4], target = 6
 // Output: [1,2]
 
-var twoSum = fucntion(array, target){
+var twoSum = function(array, target){
     //lets use map fucntion to store our seen ints and then make comparison checks to our map
 }
