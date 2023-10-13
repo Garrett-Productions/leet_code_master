@@ -16,6 +16,6 @@ var twoSum = function(array, target){
     //lets use map fucntion to store our seen ints and then make comparison checks to our map
     let map = Map()
     for (let i = 0; i <= array.length; i++){
-        
+        num1 = array[i] //first iteration let num1 equal the first value in our array
     }
 }
