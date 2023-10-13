@@ -20,8 +20,8 @@ var twoSum = function(array, target){
         num2 = target - num1; //  now lets find our missing num by doing some easy logic
         //lets use built in map functions to see what has been stored. such as .has, .get, and .set
         if(map.has(num2)) {
-            return [i, map.get(num2)];
-        }
+            return [i, map.get(num2)]; // so it returns [2,1], because i is at the 2nd index which is equal to 4
+        } // num2 is gonna be equal to target(6) - num1(2) = 4... num2 = 4, so if map has 4 return index
         map.set(num1, i ) //set map to 1st iteration
     }
 };
