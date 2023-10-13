@@ -18,5 +18,6 @@ var twoSum = function(array, target){
     for (let i = 0; i <= array.length; i++){
         num1 = array[i] //first iteration let num1 equal the first value in our array
         num2 = target - num1 //  now lets find our missing num by doing some easy logic
+        //lets use built in map functions to see what has been stored. such as .has, .get, and .set
     }
 }
