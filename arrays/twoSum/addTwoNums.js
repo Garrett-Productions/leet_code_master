@@ -25,4 +25,5 @@ var twoSum = function(array, target){
         // else
         map.set(num1, i ) //set map to 1st iteration
     }
-}
+};
+console.log(twoSum)
