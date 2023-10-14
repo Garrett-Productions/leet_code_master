@@ -79,5 +79,7 @@ function isValid(s) {
 
 // Example usage
 const inputString = '({[]})';
+const thisString = "()[]{}"
+const thatString = "(]"
 const isValidString = isValid(inputString);
 console.log(isValidString); // Output: true
