@@ -61,15 +61,14 @@ function isValid(string) {
         '}': '{',
         ']': '['
     };
-
     for (let i = 0; i < string.length; i++) {
         const currentBracket = string[i]; // equals to each char in our string being passed in
         if (currentBracket === '(' || currentBracket === '{' || currentBracket === '[') {
             stack.push(currentBracket); // we use stack to store open values if we see them first
         } else {
-            const topOfStack = stack.pop(); // if it isnt an opening mark, then its a clsing one, and set it equal to var
-            if (topOfStack !== bracketMap[currentBracket]) {
-                return false; // Invalid, mismatched brackets
+            const topOfStack = stack.pop(); // if it isnt an opening mark, then its a closing one, and capture OUR LAST push in a var
+            if (topOfStack !== bracketMap[currentBracket]) { // compare it, the closing bracket, to the respective key in bracketMap
+                return false; // if the closing bracket doesnt equal one of the keys(which are all closing..) in bracketMap then return false
             }
         }
     }
