@@ -64,7 +64,7 @@ var twoSome = function(array, value){
     }
 }
 console.log(twoSome(array = [3,2,4], target = 6)) //as
-
+//
 // new Map() – creates the map.
 // map.set(key, value) – stores the value by the key.
 // map.get(key) – returns the value by the key, undefined if key doesn’t exist in map.
