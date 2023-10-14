@@ -43,3 +43,33 @@ function isValid(s) {
 const inputString = '({[]})';
 const isValidString = isValid(inputString);
 console.log(isValidString); // Output: true
+
+// without built ins
+
+function isValid(s) {
+    const stack = [];
+    const bracketMap = {
+        ')': '(',
+        '}': '{',
+        ']': '['
+    };
+
+    for (let i = 0; i < s.length; i++) {
+        const currentBracket = s[i];
+        if (currentBracket === '(' || currentBracket === '{' || currentBracket === '[') {
+            stack.push(currentBracket);
+        } else {
+            const topOfStack = stack.pop();
+            if (topOfStack !== bracketMap[currentBracket]) {
+                return false; // Invalid, mismatched brackets
+            }
+        }
+    }
+
+    return stack.length === 0; // If stack is empty, all brackets are matched
+}
+
+// Example usage
+const inputString = '({[]})';
+const isValidString = isValid(inputString);
+console.log(isValidString); // Output: true
