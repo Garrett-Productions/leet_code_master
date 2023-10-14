@@ -54,7 +54,7 @@
 // Open brackets must be closed in the correct order.
 // Every close bracket has a corresponding open bracket of the same type.
 
-function isValid(s) {
+function isValid(string) {
     const stack = [];
     const bracketMap = {
         ')': '(',
@@ -62,8 +62,8 @@ function isValid(s) {
         ']': '['
     };
 
-    for (let i = 0; i < s.length; i++) {
-        const currentBracket = s[i];
+    for (let i = 0; i < string.length; i++) {
+        const currentBracket = string[i];
         if (currentBracket === '(' || currentBracket === '{' || currentBracket === '[') {
             stack.push(currentBracket);
         } else {
@@ -82,4 +82,6 @@ const inputString = '({[]})';
 const thisString = "()[]{}"
 const thatString = "(]"
 const isValidString = isValid(inputString);
+// const isValidString = isValid(thisString);
+// const isValidString = isValid(thatString);
 console.log(isValidString); // Output: true
