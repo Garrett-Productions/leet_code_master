@@ -6,6 +6,7 @@
 // Consider the number of elements in nums which are not equal to val be k, 
 // to get accepted, you need to do the following things:
 
+// easy algo, if the value being passed in doesnt equal the value at the arrays index, then increase our counter, else do nothing, return counter
 var removeElement = function(nums, val) {
     let uniqueVals = 0
     for (let i = 0; i< nums.length; i++){
