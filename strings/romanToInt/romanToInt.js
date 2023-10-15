@@ -35,7 +35,7 @@ var romeToInt = function(string) {
     });
     return result
 }
-console.log(romeToInt("MCMXCIV")) //
+console.log(romeToInt("MCMXCIV")) 
 console.log(romeToInt("III"))
 console.log(romeToInt("LVIII"))
 
