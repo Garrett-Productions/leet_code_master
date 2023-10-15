@@ -66,6 +66,7 @@ function isValid(string) {
         if (currentBracket === '(' || currentBracket === '{' || currentBracket === '[') {
             stack.push(currentBracket); // we use stack to store open values if we see them first
         } else {
+            const topOfStack = stack.pop();
              if (topOfStack !== bracketMap[currentBracket]) { // compare it, the closing bracket, to the respective key in bracketMap
                 return false; // if the closing bracket doesnt equal one of the keys(which are all closing..) in bracketMap then return false
             }
