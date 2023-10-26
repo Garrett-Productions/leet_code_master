@@ -15,7 +15,6 @@ function insertAt(arr, index, val) {
     // Return the modified array
     return arr;
 }
-
 // Example usage
 let originalArray = [1, 2, 3, 4, 5];
 let insertIndex = 2;
@@ -27,6 +26,17 @@ console.log(modifiedArray);
 // This creates space for the new value. Then, it inserts the new value at the specified index. 
 // The time complexity of this solution is O(n) because in the worst case, it needs to shift n elements to the right. 
 // The space complexity is O(1) because the operation is performed in-place, without using additional data structures that grow with the input size.
+
+function insertionValue(array, indexToInsert, value){
+    // shift values 
+    for(i = array.length - 1;i >= indexToInsert; i--){
+        console.log(i)
+        array[i+1]= array[i]
+    }
+    array[indexToInsert] = value;
+    return array;
+}
+
 
 
 
