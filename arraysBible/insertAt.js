@@ -9,7 +9,7 @@ function insertAt(arr, index, val) {
         console.log(i) // as long as i is greater than the index being passed in run this code
         arr[i + 1] = arr[i]; // 1st iteration, at the starting position + 1 equal the 
     }
-    //When it's not, Insert the val being passed in at the specified index
+    //When i is not less than, Insert the val being passed in at the specified index, at the place its suppose to be
     arr[index] = val;
     
     // Return the modified array
