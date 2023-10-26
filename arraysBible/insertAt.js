@@ -5,7 +5,7 @@
 
 function insertAt(arr, index, val) {
     // Shift elements to the right to make space for the new value
-    for (let i = arr.length-1; i >= index; i--) { //  let i start at the last value, and subtract from each time, its -1 so its not undefined
+    for (let i = arr.length-1; i >= index; i--) { //  let i have a starting value of the # of vals in our array, and subtract from each time, its -1 so its not undefined
         console.log(i) // as long as i is greater than the index being passed in run this code
         arr[i + 1] = arr[i]; // 1st iteration, at the starting position + 1 equal the 
     }
