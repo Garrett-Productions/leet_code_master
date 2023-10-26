@@ -37,7 +37,7 @@ function insertionValue(array, indexToInsert, value){
     return array;
 }
 
-
+console.log(insertionValue([1,2,10,4,82,2], 4, 11))
 
 
 
