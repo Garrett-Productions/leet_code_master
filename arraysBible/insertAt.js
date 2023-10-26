@@ -5,11 +5,10 @@
 
 function insertAt(arr, index, val) {
     // Shift elements to the right to make space for the new value
-    for (let i = arr.length-1; i >= index; i--) {
+    for (let i = arr.length-1; i >= index; i--) { //  let i start at the last value, and subtract from each time, its -1 so its not undefined
         console.log(i)
         arr[i + 1] = arr[i];
     }
-    
     // Insert the new value at the specified index
     arr[index] = val;
     
