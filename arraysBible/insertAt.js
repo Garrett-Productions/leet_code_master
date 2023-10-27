@@ -51,7 +51,9 @@ function insertVal(array, index, value){
         console.log(1)
         //when this is true, i being greater than index, shift values in array
         array[i+1]= array[i] // set the next position equal to the current position
-    }
+    }// when this isnt true, when i is less than the index, well insert the value into the array
+    array[index] = value;
+    return array;
 }
 
 console.log(insertVal([1,2,5,6,10], 4, 11)) // 11 needs to go between 6 & 10 in ther 4th index
