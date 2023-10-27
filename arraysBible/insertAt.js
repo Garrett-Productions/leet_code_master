@@ -56,6 +56,6 @@ function insertVal(array, index, value){
     return array;
 }
 
-console.log(insertVal([1,2,5,6,10], 4, 11)) // 11 needs to go between 6 & 10 in ther 4th index
+console.log(insertVal([1,2,5,6,10], 4, 11)) // 11 needs to go between 6 & 10 in ther 4th index, because as long as 5 is greater than 4, we run the code
 // we can start at the last position of the array, and loop backward, 
 //as long as i is greater than the index then shift my indixes, else, set the index of the array equal to the value
