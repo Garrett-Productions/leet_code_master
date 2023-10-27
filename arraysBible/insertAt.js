@@ -8,7 +8,8 @@ function insertAt(arr, index, val) {
     for (let i = arr.length-1; i >= index; i--) { //  let i have a starting value of the # of vals in our array & subtract if true
         console.log(i) 
         arr[i + 1] = arr[i]; // when true, shift values, or replace values, with making the next value equal to the current position
-    }
+    } //[0,1,2,3]
+    //     in   i
     //When i is not less than, Insert the val being passed in at the specified index, at the place its suppose to be
     arr[index] = val;
     
@@ -41,4 +42,18 @@ console.log(insertionValue([1,2,10,4,82,2], 4, 11))
 
 
 
+// Given an array, index, and additional value, 
+// ​insert the value into the array a​t the given index. 
+// Do this without using built-in array methods. 
+// You can think of ​PushFront(arr,val)​ as equivalent to InsertAt(arr,0,val)​.
+function insertVal(array, index, value){
+    for(let i = array.length - 1; i >= index; i--){
+        console.log(1)
+        //when this is true, i being greater than index, shift values in array
+        array[i+1]= array[i] // set the next position equal to the current position
+    }
+}
 
+console.log(insertVal([1,2,5,6,10], 4, 11)) // 11 needs to go between 6 & 10 in ther 4th index
+// we can start at the last position of the array, and loop backward, 
+//as long as i is greater than the index then shift my indixes, else, set the index of the array equal to the value
