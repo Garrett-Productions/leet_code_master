@@ -45,8 +45,17 @@ console.log(removeDupe(nums = [0,0,1,1,1,2,2,3,3,4]))
 // Then return the number of unique elements in nums.
 
 //return a counter value of all the elements in nums that aren't equal to another val in thr array
-function (removeDupees){
-
+function removeDupees(nums){
+    counter = 0
+    for(let i = 0; i < nums.length; i++){
+        if(nums[i]!== nums[i+1]){
+            console.log(i)
+            counter++
+            // if(i==='undefined'){
+            //     break
+            // }
+        }
+    }
 }
 
 
