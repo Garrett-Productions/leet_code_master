@@ -82,4 +82,8 @@ remove(nums = [0,1,2,2,3,0,4,2], val = 2)
 // The order of the elements may be changed. 
 // Then return the number of elements in nums which are not equal to val.
 
-remove(nums = [0,1,2,2,3,0,4,2], val = 2)
+
+function removeNums(nums, val){
+    
+}
+removeNums(nums = [0,1,2,2,3,0,4,2], val = 2)
