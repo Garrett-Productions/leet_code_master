@@ -107,6 +107,6 @@ var twoSum = function(nums, target) {
 
 
 function twoNumbers(nums, target){
-    
+    let map = new Map();
 }
 console.log(twoNumbers(nums=[4,6,10,54,77], target = 60))
