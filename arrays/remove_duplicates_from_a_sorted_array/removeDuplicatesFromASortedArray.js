@@ -50,9 +50,8 @@ function removeDupees(nums){
     for(let i = 0; i < nums.length; i++){
         if(nums[i]!= nums[i+1]){
             nums[counter] = nums[i]
+            console.log('Counter is' + counter + ' this is array ' + arr)
             counter++
-            console.log(counter)
-            
         }
     }
     return counter
