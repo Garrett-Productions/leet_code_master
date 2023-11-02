@@ -84,6 +84,7 @@ remove(nums = [0,1,2,2,3,0,4,2], val = 2)
 
 //return amount of elements in num that are different then the val being passed in
 //we need to loop through nums andf compare each indice value to the val being passed in, if its the differnet, increase a counter var
+// create a counter var
 function removeNums(nums, val){
 
 
