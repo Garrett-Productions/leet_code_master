@@ -3,14 +3,11 @@ function removeDupees(nums){
     for(let i = 0; i < nums.length; i++){
         if(nums[i]!= nums[i+1]){
             nums[counter] = nums[i]
+            console.log('Counter is' + counter + ' this is array ' + nums)
             counter++
-            console.log(counter)
-            // if(i==='undefined'){
-            //     break
-            // }
         }
+        console.log(counter)
     }
     return counter
 }
-
-console.log(removeDupees(nums = [0,0,1,1,1,2,2,3,3,4]))
+removeDupees(nums = [0,0,1,1,1,2,2,3,3,4])
