@@ -82,8 +82,8 @@ remove(nums = [0,1,2,2,3,0,4,2], val = 2)
 // The order of the elements may be changed. 
 // Then return the number of elements in nums which are not equal to val.
 
-
+//return amount of elements in num that are different then the val being passed in
 function removeNums(nums, val){
-    
+
 }
 removeNums(nums = [0,1,2,2,3,0,4,2], val = 2)
