@@ -70,9 +70,9 @@ console.log(insertVal([1,2,5,6,10], 4, 11)) // 11 needs to go between 6 & 10 in 
 
 
 function insertValue(array, index, value){
-    
+
 }
 
 
-
+// at the 4th index of this array insert the value 11
 console.log(insertValue([1,2,5,6,10], 4, 11))
