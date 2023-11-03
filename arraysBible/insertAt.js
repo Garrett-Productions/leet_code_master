@@ -71,6 +71,9 @@ console.log(insertVal([1,2,5,6,10], 4, 11)) // 11 needs to go between 6 & 10 in 
 
 function insertValue(array, index, value){
 
+        for(let i = 0; i <= array.length; i++){
+            
+        }
 }
 
 
