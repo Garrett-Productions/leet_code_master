@@ -69,7 +69,9 @@ console.log(insertVal([1,2,5,6,10], 4, 11)) // 11 needs to go between 6 & 10 in 
 // You can think of ​PushFront(arr,val)​ as equivalent to InsertAt(arr,0,val)​.
 
 
-
+function insertValue(array, index, value){
+    
+}
 
 
 
