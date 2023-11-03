@@ -59,3 +59,18 @@ function insertVal(array, index, value){
 console.log(insertVal([1,2,5,6,10], 4, 11)) // 11 needs to go between 6 & 10 in ther 4th index, because as long as 5 is greater than 4, we run the code
 // we can start at the last position of the array, and loop backward, 
 //as long as i is greater than the index then shift my indixes, else, set the index of the array equal to the value
+
+
+
+
+// Given an array, index, and additional value, 
+// ​insert the value into the array a​t the given index. 
+// Do this without using built-in array methods. 
+// You can think of ​PushFront(arr,val)​ as equivalent to InsertAt(arr,0,val)​.
+
+
+
+
+
+
+console.log(insertValue([1,2,5,6,10], 4, 11))
