@@ -1,13 +1,13 @@
-function twoNumbers(nums, target){
+function twoNums(array, target){
     let map = new Map();
-    for(let i = 0;i <nums.length; i++){
-        let num1 = nums[i];
-        let num2 = target - num1;
-        if (map.has(num2)){
-            console.log(map.get(num2))
-            return [i, map.get(num2)];
+    for(i = 0; i < array.length; i++){ 
+        let numOne = array[i];
+        let numTwo = target - numOne
+        if(map.has(numTwo)){
+            console.log("This is i, and numOne:", i, "-", numOne, "This is numTwo:", numTwo, "this is the target", target)
+            return [i, map.get(numTwo)]
         }
-        map.set(num1, i)
+        map.set(numOne,i)
     }
 }
-console.log(twoNumbers(nums=[4,6,10,54,77], target = 60))
+console.log(twoNums(array=[4,6,10,54,77], target = 60))

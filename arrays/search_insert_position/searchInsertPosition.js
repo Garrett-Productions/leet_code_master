@@ -10,29 +10,54 @@ var searchInsert = function(nums, target){
     let right = nums.length - 1;
 
     while(left <= right){
-        let mid = left + Math.floor((right-left)/2);
+        let mid = left + Math.floor((right-left)/2);// mid = 0 + (3-0)/2 which = 1 so 0 + 1
+        console.log("mid is here ", mid)
 
-        if(nums[mid] === target){
+        if(nums[mid] === target){ //if 1 = 5 return 1
             return mid;
         }
-        if(nums[mid] > target){
+        if(nums[mid] > target){ // if 1 is greater than 5 then reset right to be 0 or 1 in this situation
             right = mid -1;
-        } else {
+            console.log("right is here",right)
+        } else { // else if 1 is equal to or less than 5 then set left equal to 2 or 1 + 1
             left = mid +1;
+            console.log("left is here",left)
         }
+        console.log(left)
     }
     return left;
 }
 
 console.log(searchInsert(nums = [1,3,5,6], target = 5))
 console.log(searchInsert(nums = [1,3,5,6], target = 2))
-// Example 1:
 
-// Input: nums = [1,3,5,6], target = 5
-// Output: 2
-// Example 2:
 
-// Example 2
+// Given an array and a value
+// return the index of the array if the value is found
+// if not return the index of where it'd be in sorted order]
+function searchInsertPosition(array, value){
 
-// Input: nums = [1,3,5,6], target = 2
-// Output: 1
+    let leftPoint = 0 
+    let rightPoint = array.length - 1
+
+    while (leftPoint <= rightPoint ){
+        let mid = leftPoint + Math.floor((rightPoint-leftPoint)/2); // 1
+        // 1st iteration, leftPoint = 0, rightPoint = 3, mid = 1, when mid = value return mid
+        // after 1st iteration, going back through, while 2 <= 3 set mid = 2 + 0 = 2, now mid is 0
+        console.log("Mid is here: ", mid)
+        //if checks
+        if(array[mid] === value){
+            return mid
+        }
+        if (array[mid] > value){
+            rightPoint = mid - 1
+            console.log("Right is here:", rightPoint)
+        } else {
+            leftPoint = mid +1 // left point will be 2 on 1st iteration, because its 1 + 1
+            console.log("left is here", leftPoint)
+        }
+        console.log("inserting", value,  "at position", leftPoint)
+    }
+    return leftPoint;
+}
+console.log(searchInsertPosition(array = [1,3,5,6], value = 2))
