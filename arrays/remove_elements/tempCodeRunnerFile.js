@@ -1,11 +1,10 @@
-function removeNums(nums, val){
-
-    counterToReturn = 0
-    for(let i = 0;i <=nums.length-1;i++){
-        if(nums[i] !== val)
-        // console.log(i)
-        counterToReturn++
+function removeTheVal(array, val){
+    counter = 0
+    for(let i=0; i <= array.length-1; i++){
+        if(array[i]!= val){
+            counter++
+        }
+        console.log(counter)
     }
-    console.log(counterToReturn)
 }
-removeNums(nums = [0,1,2,2,3,0,4,2], val = 2)
+removeTheVal(nums = [0,1,2,2,3,0,4,2], val = 2)
