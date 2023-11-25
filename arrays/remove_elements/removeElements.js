@@ -104,7 +104,7 @@ removeNums(nums = [0,1,2,2,3,0,4,2], val = 2)
 // Then return the number of elements in nums which are not equal to val.
 
 // we have two parameters, an array and an int. we need a counter that will increase when the val is not equal to a value in our array
-
+// loop through the array and make comparison checks
 function removeTheVal(array, val){
     counter = 0
 }
