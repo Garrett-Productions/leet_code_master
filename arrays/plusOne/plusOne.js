@@ -6,4 +6,4 @@
 // Increment the large integer by one and return the resulting array of digits.
 
 //How to solve 
-// 1.
+// 1. if its an array of ints and we need to increase the number, we can turn the array into an int, add 1, turn it back into an array and return it.
