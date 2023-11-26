@@ -34,3 +34,5 @@ function plusOne(digits){
 }
 plusOne([1,2,3])
 //Output: [1,2,4]
+
+//we can just set our iterator equal to the last number in the array, and then increment it, on that same loop we can also return it.
