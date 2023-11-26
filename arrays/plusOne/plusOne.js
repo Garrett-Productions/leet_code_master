@@ -19,6 +19,7 @@ Thus, the result should be [1,2,4].
 // simply apply the toString() method on the given array
 // To convert a string to an integer parseInt(), 
 
+// my attempt
 function plusOne(digits){
     for(let i = 0; i <= digits.length;i++){
         if(digits[i] == digits.length - 1){
@@ -28,12 +29,8 @@ function plusOne(digits){
     }
     stringOfArray = digits.toString()
     console.log(stringOfArray)
-
-
-
     // intOfString = parseInt(stringOfArray)
     // console.log(intOfString)
 }
-
 plusOne([1,2,3])
 //Output: [1,2,4]
