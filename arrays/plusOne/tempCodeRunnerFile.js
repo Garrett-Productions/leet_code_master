@@ -1,7 +1,6 @@
 function plusOne(digits){
-    intOfArray = digits.toString()
-    console.log(intOfArray)
+    stringOfArray = digits.toString()
+    console.log(stringOfArray)
 }
 
 plusOne([1,2,3])
-//Output: [1,2,4]

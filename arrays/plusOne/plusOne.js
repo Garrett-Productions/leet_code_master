@@ -21,7 +21,7 @@ Thus, the result should be [1,2,4].
 
 function plusOne(digits){
     stringOfArray = digits.toString()
-    console.log(intOfArray)
+    console.log(stringOfArray)
 }
 
 plusOne([1,2,3])
