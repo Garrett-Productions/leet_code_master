@@ -36,3 +36,19 @@ plusOne([1,2,3])
 //Output: [1,2,4]
 
 //we can just set our iterator equal to the last number in the array, and then increment it, on that same loop we can also return it.
+
+function increaseOne(digits){
+    for(let i = digits.length -1; i>= 0; i--){ // length is 3, i = 2
+        console.log(digits.length)
+        console.log(i)
+        if(digits[i]!== 9){
+            digits[i]++
+            return digits
+        } else {
+            digits[i]= 0 
+        }
+    }
+    digits.unshift(1)
+    return digits
+}
+console.log(increaseOne([1,2,3]))
