@@ -1,5 +1,5 @@
 function increaseOne(digits){
-    for(let i = digits.length -1; i>= 0; i--){
+    for(let i = digits.length -1; i>= 0; i--){ // length is 3, i = 2
         console.log(digits.length)
         console.log(i)
         if(digits[i]!== 9){
@@ -12,4 +12,4 @@ function increaseOne(digits){
     digits.unshift(1)
     return digits
 }
-increaseOne([1,2,3])
+console.log(increaseOne([1,2,3]))
