@@ -20,8 +20,19 @@ Thus, the result should be [1,2,4].
 // To convert a string to an integer parseInt(), 
 
 function plusOne(digits){
+    for(let i = 0; i <= digits.length;i++){
+        if(digits[i] == digits.length - 1){
+            console.log(digits[i])
+            // const numToAdd = di
+        }
+    }
     stringOfArray = digits.toString()
     console.log(stringOfArray)
+
+
+
+    // intOfString = parseInt(stringOfArray)
+    // console.log(intOfString)
 }
 
 plusOne([1,2,3])
