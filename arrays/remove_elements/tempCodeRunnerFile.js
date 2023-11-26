@@ -2,6 +2,7 @@ function removeTheVal(array, val){
     counter = 0
     for(let i=0; i <= array.length-1; i++){
         if(array[i]!= val){
+            nums[counter] = nums[i]
             counter++
         }
         console.log(counter)
