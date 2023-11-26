@@ -20,7 +20,7 @@ Thus, the result should be [1,2,4].
 // To convert a string to an integer parseInt(), 
 
 function plusOne(digits){
-    intOfArray = digits.toString()
+    stringOfArray = digits.toString()
     console.log(intOfArray)
 }
 
