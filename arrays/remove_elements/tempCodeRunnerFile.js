@@ -1,11 +1,11 @@
-function removeTheVal(array, val){
-    counter = 0
-    for(let i=0; i <= array.length-1; i++){
-        if(array[i]!= val){
-            nums[counter] = nums[i]
-            counter++
+var removeElement = function(nums, val) {
+    let valsToReturn = 0
+    for (let i = 0; i< nums.length; i++){
+        if(nums[i] !== val){ // if the current position does not equal value then increase our index
+            nums[valsToReturn] = nums[i];
+            valsToReturn++
         }
-        console.log(counter)
     }
-}
-removeTheVal(nums = [0,1,2,2,3,0,4,2], val = 2)
+    return valsToReturn
+};
+console.log(removeElement(nums = [0,1,2,2,3,0,4,2], val = 2))
